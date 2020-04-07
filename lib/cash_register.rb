@@ -25,6 +25,9 @@ class CashRegister
     end 
   end 
   
+  def items 
+    @items 
+  end 
  
 #   describe '#items' do
 #     it 'returns an array containing all items that have been added' do
