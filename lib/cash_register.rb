@@ -16,6 +16,7 @@ class CashRegister
     quantity.times do 
       @items << title 
     end 
+    
   end 
   
   def apply_discount
@@ -29,6 +30,10 @@ class CashRegister
   
   def items 
     @items 
+  end 
+  
+  def void_last_transaction 
+    @item - @item[@item.length-1] 
   end 
  
 #   describe '#items' do
